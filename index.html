@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CircuitSenshi — Electronics Repair & PCB Lab Dagupan</title>
-    
-    <!-- This links directly to the CSS file in your blue folder -->
+    <meta name="description" content="ECE-professional Hall Effect upgrades, micro-soldering, and custom PCB prototyping in Dagupan City. Nationwide mail-in repairs with full video proof.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./42fefcc473fa06b9.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
 </head>
 <body class="__className_bf57bf">
     
-    <!-- NAVIGATION BAR -->
     <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-background/95 backdrop-blur-md border-b border-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 md:h-20 flex items-center justify-between">
             <a class="flex items-center gap-2 group" href="#">
@@ -31,124 +30,199 @@
 
     <main class="relative overflow-x-hidden">
         
-        <!-- HERO SECTION -->
         <section class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20">
             <div class="absolute inset-0 grid-cyber opacity-100"></div>
             <div class="absolute inset-0 scanline-overlay"></div>
+            <div class="blob-primary absolute top-1/4 left-1/4 w-[500px] h-[500px] animate-float-slow"></div>
+            <div class="blob-accent absolute bottom-1/3 right-1/4 w-[400px] h-[400px] animate-float-medium"></div>
+            <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent pointer-events-none"></div>
             
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center">
                 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/5 mb-8">
                     <span class="w-2 h-2 rounded-full bg-primary animate-neon-pulse"></span>
                     <span class="text-xs font-black uppercase tracking-[0.35em] text-primary">ECE Professional · Dagupan City, Philippines</span>
                 </div>
-                <h1 class="text-5xl md:text-7xl font-black text-foreground mb-4">Stop Buying <span class="text-accent neon-text-accent">New Controllers.</span><br><span class="text-primary neon-text-primary">Upgrade to Hall Effect.</span></h1>
+                <h1 class="text-hero-xl text-foreground mb-4">Stop Buying <span class="text-accent neon-text-accent">New Controllers.</span><br><span class="text-primary neon-text-primary">Upgrade to Hall Effect.</span></h1>
                 <p class="max-w-2xl mx-auto text-base md:text-xl text-muted-foreground font-medium leading-relaxed mb-10">Engineering-grade micro-soldering, logic board diagnostics, and custom PCB prototyping — by a licensed ECE professional. Fix stick drift permanently. No guesswork. Full video proof.</p>
                 
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-                    <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-black text-sm tracking-wide neon-glow-primary hover:opacity-90 transition-all duration-200" href="#contact">Book a Mail-In Repair</a>
-                    <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-border text-foreground font-black text-sm tracking-wide hover:border-primary/50 hover:bg-primary/5 transition-all duration-200" href="#how-it-works">Local Dagupan Drop-off</a>
+                    <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-black text-sm tracking-wide neon-glow-primary hover:opacity-90 transition-all duration-200" href="#contact">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+                        Book a Mail-In Repair
+                    </a>
+                    <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-border text-foreground font-black text-sm tracking-wide hover:border-primary/50 hover:bg-primary/5 transition-all duration-200" href="#how-it-works">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        Local Dagupan Drop-off
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- SERVICES SECTION -->
         <section id="services" class="py-16 md:py-24 relative scroll-mt-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
                 <div class="text-center mb-12">
-                    <span class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.4em] text-primary mb-4">Services & Pricing</span>
-                    <h2 class="text-4xl font-black text-foreground mb-4">Real Repairs. <span class="text-primary neon-text-primary">Real Results.</span></h2>
+                    <span class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.4em] text-primary mb-4">
+                        <span class="h-px w-12 bg-primary opacity-60"></span>Services & Pricing<span class="h-px w-12 bg-primary opacity-60"></span>
+                    </span>
+                    <h2 class="text-section-title text-foreground mb-4">Real Repairs. <span class="text-primary neon-text-primary">Real Results.</span></h2>
+                    <p class="max-w-xl mx-auto text-base text-muted-foreground">Every service backed by video documentation. You watch the repair happen — not just get a receipt.</p>
                 </div>
+                
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
                     <div class="card-cyber group relative overflow-hidden">
                         <div class="relative p-6 flex flex-col h-full">
-                            <span class="text-[10px] font-black uppercase tracking-[0.4em] px-3 py-1 rounded-full border border-primary/30 text-primary bg-primary/5 mb-4 inline-block w-fit">Most Popular</span>
+                            <div class="flex items-center justify-between mb-5">
+                                <span class="text-[10px] font-black uppercase tracking-[0.4em] px-3 py-1 rounded-full border border-primary/30 text-primary bg-primary/5">Most Popular</span>
+                                <div class="w-10 h-10 rounded-full flex items-center justify-center border border-primary/20 text-primary bg-primary/5">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"></path></svg>
+                                </div>
+                            </div>
                             <h3 class="text-xl font-black text-foreground mb-3 leading-tight">Hall Effect Joystick Upgrades</h3>
                             <p class="text-sm text-muted-foreground leading-relaxed mb-5 flex-grow">Permanently eliminate stick drift using magnetic Hall Effect sensors. No more potentiometer wear — ever.</p>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-center gap-2 text-xs font-medium text-muted-foreground"><span class="w-1.5 h-1.5 rounded-full shrink-0 bg-primary"></span>PS5 DualSense</li>
+                                <li class="flex items-center gap-2 text-xs font-medium text-muted-foreground"><span class="w-1.5 h-1.5 rounded-full shrink-0 bg-primary"></span>Xbox Series X/S</li>
+                                <li class="flex items-center gap-2 text-xs font-medium text-muted-foreground"><span class="w-1.5 h-1.5 rounded-full shrink-0 bg-primary"></span>Nintendo Switch Joy-Con</li>
+                                <li class="flex items-center gap-2 text-xs font-medium text-muted-foreground"><span class="w-1.5 h-1.5 rounded-full shrink-0 bg-primary"></span>30-day drift guarantee</li>
+                            </ul>
                             <div class="border-t border-border pt-4 flex items-end justify-between">
-                                <div><p class="text-2xl font-black text-primary neon-text-primary">1,200 – 1,500</p></div>
-                                <a href="#contact" class="text-xs font-black uppercase tracking-wide px-4 py-2 rounded-full border border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground transition-all">Book</a>
+                                <div><p class="text-2xl font-black text-primary neon-text-primary">₱1,200 – ₱1,500</p><p class="text-xs text-muted-foreground mt-0.5">Per controller</p></div>
+                                <a href="#contact" class="text-xs font-black uppercase tracking-wide px-4 py-2 rounded-full border border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground transition-all">Book ➔</a>
                             </div>
                         </div>
                     </div>
+                    
                     <div class="card-cyber group relative overflow-hidden">
                         <div class="relative p-6 flex flex-col h-full">
-                            <span class="text-[10px] font-black uppercase tracking-[0.4em] px-3 py-1 rounded-full border border-accent/30 text-accent bg-accent/5 mb-4 inline-block w-fit">Engineering Grade</span>
+                            <div class="flex items-center justify-between mb-5">
+                                <span class="text-[10px] font-black uppercase tracking-[0.4em] px-3 py-1 rounded-full border border-accent/30 text-accent bg-accent/5">Engineering Grade</span>
+                                <div class="w-10 h-10 rounded-full flex items-center justify-center border border-accent/20 text-accent bg-accent/5">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"></path></svg>
+                                </div>
+                            </div>
                             <h3 class="text-xl font-black text-foreground mb-3 leading-tight">Advanced Micro-Soldering</h3>
                             <p class="text-sm text-muted-foreground leading-relaxed mb-5 flex-grow">Logic board diagnostics, SMD component replacement, dead USB/charging ports, and BGA rework under microscope.</p>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-center gap-2 text-xs font-medium text-muted-foreground"><span class="w-1.5 h-1.5 rounded-full shrink-0 bg-accent"></span>Logic board diagnostics</li>
+                                <li class="flex items-center gap-2 text-xs font-medium text-muted-foreground"><span class="w-1.5 h-1.5 rounded-full shrink-0 bg-accent"></span>SMD & IC replacement</li>
+                                <li class="flex items-center gap-2 text-xs font-medium text-muted-foreground"><span class="w-1.5 h-1.5 rounded-full shrink-0 bg-accent"></span>Dead port repair</li>
+                                <li class="flex items-center gap-2 text-xs font-medium text-muted-foreground"><span class="w-1.5 h-1.5 rounded-full shrink-0 bg-accent"></span>Continuity verification</li>
+                            </ul>
                             <div class="border-t border-border pt-4 flex items-end justify-between">
-                                <div><p class="text-2xl font-black text-accent neon-text-accent">800 – 2,500+</p></div>
-                                <a href="#contact" class="text-xs font-black uppercase tracking-wide px-4 py-2 rounded-full border border-accent/30 text-accent hover:bg-accent hover:text-accent-foreground transition-all">Book</a>
+                                <div><p class="text-2xl font-black text-accent neon-text-accent">₱800 – ₱2,500+</p><p class="text-xs text-muted-foreground mt-0.5">Depends on fault complexity</p></div>
+                                <a href="#contact" class="text-xs font-black uppercase tracking-wide px-4 py-2 rounded-full border border-accent/30 text-accent hover:bg-accent hover:text-accent-foreground transition-all">Book ➔</a>
                             </div>
                         </div>
                     </div>
+                    
                     <div class="card-cyber group relative overflow-hidden">
                         <div class="relative p-6 flex flex-col h-full">
-                            <span class="text-[10px] font-black uppercase tracking-[0.4em] px-3 py-1 rounded-full border border-primary/30 text-primary bg-primary/5 mb-4 inline-block w-fit">For Engineers</span>
+                            <div class="flex items-center justify-between mb-5">
+                                <span class="text-[10px] font-black uppercase tracking-[0.4em] px-3 py-1 rounded-full border border-primary/30 text-primary bg-primary/5">For Engineers</span>
+                                <div class="w-10 h-10 rounded-full flex items-center justify-center border border-primary/20 text-primary bg-primary/5">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"></rect><path d="M7 7h.01M17 7h.01M7 17h.01M17 17h.01M12 7v10M7 12h10"></path></svg>
+                                </div>
+                            </div>
                             <h3 class="text-xl font-black text-foreground mb-3 leading-tight">Custom PCB Prototyping</h3>
                             <p class="text-sm text-muted-foreground leading-relaxed mb-5 flex-grow">EDA schematic capture, PCB routing, and bare-board population. Ideal for ECE capstone projects and R&D.</p>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-center gap-2 text-xs font-medium text-muted-foreground"><span class="w-1.5 h-1.5 rounded-full shrink-0 bg-primary"></span>EDA routing (KiCad/Altium)</li>
+                                <li class="flex items-center gap-2 text-xs font-medium text-muted-foreground"><span class="w-1.5 h-1.5 rounded-full shrink-0 bg-primary"></span>Bare-board population</li>
+                                <li class="flex items-center gap-2 text-xs font-medium text-muted-foreground"><span class="w-1.5 h-1.5 rounded-full shrink-0 bg-primary"></span>Capstone project support</li>
+                                <li class="flex items-center gap-2 text-xs font-medium text-muted-foreground"><span class="w-1.5 h-1.5 rounded-full shrink-0 bg-primary"></span>DFM review included</li>
+                            </ul>
                             <div class="border-t border-border pt-4 flex items-end justify-between">
-                                <div><p class="text-2xl font-black text-primary neon-text-primary">Starts at 1,500</p></div>
-                                <a href="#contact" class="text-xs font-black uppercase tracking-wide px-4 py-2 rounded-full border border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground transition-all">Book</a>
+                                <div><p class="text-2xl font-black text-primary neon-text-primary">Starts at ₱1,500</p><p class="text-xs text-muted-foreground mt-0.5">Per prototype run</p></div>
+                                <a href="#contact" class="text-xs font-black uppercase tracking-wide px-4 py-2 rounded-full border border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground transition-all">Book ➔</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="relative rounded-xl border border-accent/30 bg-accent/5 p-5 flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left animate-border-glow">
+                    <div class="w-10 h-10 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center shrink-0 text-accent">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4M12 16h.01"></path></svg>
+                    </div>
+                    <div>
+                        <p class="text-sm font-black text-foreground">Diagnostic Fee: <span class="text-accent">₱300</span></p>
+                        <p class="text-xs text-muted-foreground mt-0.5">Fully deductible from your final repair bill. You only pay if we fix it.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- HOW IT WORKS SECTION -->
-        <section id="how-it-works" class="py-16 md:py-24 relative bg-muted/20 scroll-mt-20">
+        <section id="how-it-works" class="py-16 md:py-24 relative scroll-mt-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
                 <div class="text-center mb-14">
-                    <span class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.4em] text-accent mb-4">Process</span>
-                    <h2 class="text-4xl font-black text-foreground mb-4">How It <span class="text-accent neon-text-accent">Works</span></h2>
+                    <span class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.4em] text-accent mb-4">
+                        <span class="h-px w-12 bg-accent opacity-60"></span>Process<span class="h-px w-12 bg-accent opacity-60"></span>
+                    </span>
+                    <h2 class="text-section-title text-foreground mb-4">How It <span class="text-accent neon-text-accent">Works</span></h2>
                     <p class="max-w-xl mx-auto text-base text-muted-foreground">Two ways to get your device repaired. Both come with the same engineering-grade process.</p>
                 </div>
                 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     <div class="path-card p-6 md:p-8 card-cyber rounded-xl border border-border">
-                        <div class="mb-8 pb-6 border-b border-border">
-                            <p class="text-xs font-black uppercase tracking-[0.35em] text-primary">Path A</p>
-                            <h3 class="text-lg font-black text-foreground mt-2">Nationwide Mail-In</h3>
-                            <p class="text-xs text-muted-foreground mt-1">Via LBC or J&T Express · Anywhere in PH</p>
+                        <div class="flex items-center gap-3 mb-8 pb-6 border-b border-border">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center text-primary">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-black uppercase tracking-[0.35em] text-primary">Path A</p>
+                                <h3 class="text-lg font-black text-foreground">Nationwide Mail-In</h3>
+                                <p class="text-xs text-muted-foreground mt-0.5">Via LBC or J&T Express · Anywhere in PH</p>
+                            </div>
                         </div>
                         <div class="space-y-6">
                             <div class="flex gap-4">
-                                <div class="w-8 h-8 rounded-full border border-primary/40 bg-primary/10 flex items-center justify-center text-xs font-black text-primary shrink-0">01</div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-8 h-8 rounded-full border border-primary/40 bg-primary/10 flex items-center justify-center text-xs font-black text-primary shrink-0">01</div>
+                                </div>
                                 <div>
                                     <p class="text-sm font-black text-foreground mb-1">Book via Form</p>
-                                    <p class="text-xs text-muted-foreground">Fill out the repair inquiry form with your device model.</p>
+                                    <p class="text-xs text-muted-foreground leading-relaxed">Fill out the repair inquiry form with your device model.</p>
                                 </div>
                             </div>
                             <div class="flex gap-4">
-                                <div class="w-8 h-8 rounded-full border border-primary/40 bg-primary/10 flex items-center justify-center text-xs font-black text-primary shrink-0">02</div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-8 h-8 rounded-full border border-primary/40 bg-primary/10 flex items-center justify-center text-xs font-black text-primary shrink-0">02</div>
+                                </div>
                                 <div>
                                     <p class="text-sm font-black text-foreground mb-1">Ship Your Device</p>
-                                    <p class="text-xs text-muted-foreground">Pack securely and ship to our Dagupan lab address.</p>
+                                    <p class="text-xs text-muted-foreground leading-relaxed">Pack securely and ship to our Dagupan lab address.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="path-card p-6 md:p-8 card-cyber rounded-xl border border-border">
-                        <div class="mb-8 pb-6 border-b border-border">
-                            <p class="text-xs font-black uppercase tracking-[0.35em] text-accent">Path B</p>
-                            <h3 class="text-lg font-black text-foreground mt-2">Local Dagupan</h3>
-                            <p class="text-xs text-muted-foreground mt-1">Campus Drop-off · Cash on Delivery</p>
+                        <div class="flex items-center gap-3 mb-8 pb-6 border-b border-border">
+                            <div class="w-10 h-10 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center text-accent">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-black uppercase tracking-[0.35em] text-accent">Path B</p>
+                                <h3 class="text-lg font-black text-foreground">Local Dagupan</h3>
+                                <p class="text-xs text-muted-foreground mt-0.5">Campus Drop-off · Cash on Delivery</p>
+                            </div>
                         </div>
                         <div class="space-y-6">
                             <div class="flex gap-4">
-                                <div class="w-8 h-8 rounded-full border border-accent/40 bg-accent/10 flex items-center justify-center text-xs font-black text-accent shrink-0">01</div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-8 h-8 rounded-full border border-accent/40 bg-accent/10 flex items-center justify-center text-xs font-black text-accent shrink-0">01</div>
+                                </div>
                                 <div>
                                     <p class="text-sm font-black text-foreground mb-1">Message Us First</p>
-                                    <p class="text-xs text-muted-foreground">Chat via WhatsApp or Messenger to book a slot.</p>
+                                    <p class="text-xs text-muted-foreground leading-relaxed">Chat via WhatsApp or Messenger to book a slot.</p>
                                 </div>
                             </div>
                             <div class="flex gap-4">
-                                <div class="w-8 h-8 rounded-full border border-accent/40 bg-accent/10 flex items-center justify-center text-xs font-black text-accent shrink-0">02</div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-8 h-8 rounded-full border border-accent/40 bg-accent/10 flex items-center justify-center text-xs font-black text-accent shrink-0">02</div>
+                                </div>
                                 <div>
                                     <p class="text-sm font-black text-foreground mb-1">Campus Drop-off</p>
-                                    <p class="text-xs text-muted-foreground">Drop your device at our Dagupan campus location.</p>
+                                    <p class="text-xs text-muted-foreground leading-relaxed">Drop your device at our Dagupan campus location.</p>
                                 </div>
                             </div>
                         </div>
@@ -157,69 +231,128 @@
             </div>
         </section>
 
-        <!-- PORTFOLIO SECTION -->
         <section id="portfolio" class="py-16 md:py-24 relative scroll-mt-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-                <div class="text-center mb-12">
-                    <span class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.4em] text-primary mb-4">Portfolio</span>
-                    <h2 class="text-4xl font-black text-foreground mb-3">Watch the <span class="text-primary neon-text-primary">Exact Process.</span></h2>
+                <div class="mb-12">
+                    <span class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.4em] text-primary mb-4">
+                        <span class="h-px w-12 bg-primary opacity-60"></span>Portfolio
+                    </span>
+                    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+                        <div>
+                            <h2 class="text-section-title text-foreground mb-3">Watch the <span class="text-primary neon-text-primary">Exact Process.</span></h2>
+                            <p class="max-w-xl text-base text-muted-foreground leading-relaxed">Don't trust "black-box" repair shops. Watch our exact engineering process on the bench. Every solder joint. Every test. Documented.</p>
+                        </div>
+                        <div class="flex gap-3 shrink-0">
+                            <a href="#" class="flex items-center gap-2 px-4 py-2.5 rounded-full border border-border text-sm font-bold text-muted-foreground hover:text-primary hover:border-primary/40 transition-all">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.79 1.53V6.78a4.85 4.85 0 0 1-1.02-.09z"></path></svg>TikTok
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-4 py-2.5 rounded-full border border-border text-sm font-bold text-muted-foreground hover:text-red-400 hover:border-red-400/40 transition-all">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.13-2.14C19.5 3.67 12 3.67 12 3.67s-7.5 0-9.37.38A3.02 3.02 0 0 0 .5 6.19C.13 8.07 0 10 0 12s.13 3.93.5 5.81a3.02 3.02 0 0 0 2.13 2.14c1.87.38 9.37.38 9.37.38s7.5 0 9.37-.38a3.02 3.02 0 0 0 2.13-2.14C23.87 15.93 24 14 24 12s-.13-3.93-.5-5.81zM9.75 15.52V8.48L15.83 12l-6.08 3.52z"></path></svg>YouTube
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-                    <div class="card-cyber p-4 rounded-xl border border-border bg-muted/10">
-                        <div class="aspect-video bg-muted mb-4 rounded flex items-center justify-center border border-primary/20">
-                            <span class="text-primary text-xs font-bold uppercase tracking-widest">TikTok Video Placeholder</span>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
+                    <div class="card-cyber group cursor-pointer overflow-hidden">
+                        <div class="relative aspect-[9/16] md:aspect-video bg-muted flex flex-col items-center justify-center overflow-hidden">
+                            <div class="absolute inset-0 grid-cyber opacity-50"></div>
+                            <div class="relative z-10 w-16 h-16 rounded-full bg-foreground/10 border border-border flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="opacity-60"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.79 1.53V6.78a4.85 4.85 0 0 1-1.02-.09z"></path></svg>
+                            </div>
+                            <div class="relative z-10 w-12 h-12 rounded-full border-2 flex items-center justify-center group-hover:scale-110 transition-all duration-300 border-primary text-primary group-hover:bg-primary group-hover:text-primary-foreground">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
+                            </div>
+                            <div class="absolute bottom-3 right-3 px-2 py-1 rounded bg-background/80 text-xs font-black text-foreground">2:14</div>
+                            <div class="absolute top-3 left-3 flex items-center gap-1 px-2 py-1 rounded-full bg-foreground/10 border border-border text-xs font-black text-foreground">TikTok</div>
                         </div>
-                        <h4 class="text-sm font-bold text-foreground leading-tight mb-2">PS5 Hall Effect Upgrade</h4>
-                        <span class="text-xs font-black uppercase tracking-wide text-primary">Watch</span>
+                        <div class="p-4">
+                            <h4 class="text-sm font-bold text-foreground leading-tight mb-2">PS5 Hall Effect Upgrade — Full Bench Process</h4>
+                            <div class="flex items-center gap-3 text-xs text-muted-foreground">
+                                <span class="flex items-center gap-1"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>14.2K views</span>
+                                <span class="text-xs font-black uppercase tracking-wide text-primary">Watch ➔</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="card-cyber p-4 rounded-xl border border-border bg-muted/10">
-                        <div class="aspect-[9/16] bg-muted mb-4 rounded flex items-center justify-center border border-accent/20">
-                            <span class="text-accent text-xs font-bold uppercase tracking-widest text-center">YouTube Shorts Placeholder</span>
+                    <div class="card-cyber group cursor-pointer overflow-hidden">
+                        <div class="relative aspect-[9/16] md:aspect-video bg-muted flex flex-col items-center justify-center overflow-hidden">
+                            <div class="absolute inset-0 grid-cyber opacity-50"></div>
+                            <div class="relative z-10 w-16 h-16 rounded-full bg-red-400/10 border border-border flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="opacity-60"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.13-2.14C19.5 3.67 12 3.67 12 3.67s-7.5 0-9.37.38A3.02 3.02 0 0 0 .5 6.19C.13 8.07 0 10 0 12s.13 3.93.5 5.81a3.02 3.02 0 0 0 2.13 2.14c1.87.38 9.37.38 9.37.38s7.5 0 9.37-.38a3.02 3.02 0 0 0 2.13-2.14C23.87 15.93 24 14 24 12s-.13-3.93-.5-5.81zM9.75 15.52V8.48L15.83 12l-6.08 3.52z"></path></svg>
+                            </div>
+                            <div class="relative z-10 w-12 h-12 rounded-full border-2 flex items-center justify-center group-hover:scale-110 transition-all duration-300 border-accent text-accent group-hover:bg-accent group-hover:text-accent-foreground">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
+                            </div>
+                            <div class="absolute bottom-3 right-3 px-2 py-1 rounded bg-background/80 text-xs font-black text-foreground">0:58</div>
+                            <div class="absolute top-3 left-3 flex items-center gap-1 px-2 py-1 rounded-full bg-red-400/10 border border-border text-xs font-black text-red-400">YouTube Shorts</div>
                         </div>
-                        <h4 class="text-sm font-bold text-foreground leading-tight mb-2">Switch Joy-Con Drift Fix</h4>
-                        <span class="text-xs font-black uppercase tracking-wide text-accent">Watch</span>
+                        <div class="p-4">
+                            <h4 class="text-sm font-bold text-foreground leading-tight mb-2">Switch Joy-Con Drift Fix — Hall Effect Mod</h4>
+                            <div class="flex items-center gap-3 text-xs text-muted-foreground">
+                                <span class="flex items-center gap-1"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>8.7K views</span>
+                                <span class="text-xs font-black uppercase tracking-wide text-accent">Watch ➔</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="card-cyber p-4 rounded-xl border border-border bg-muted/10">
-                        <div class="aspect-video bg-muted mb-4 rounded flex items-center justify-center border border-primary/20">
-                            <span class="text-primary text-xs font-bold uppercase tracking-widest">TikTok Video Placeholder</span>
+                    <div class="card-cyber group cursor-pointer overflow-hidden">
+                        <div class="relative aspect-[9/16] md:aspect-video bg-muted flex flex-col items-center justify-center overflow-hidden">
+                            <div class="absolute inset-0 grid-cyber opacity-50"></div>
+                            <div class="relative z-10 w-16 h-16 rounded-full bg-foreground/10 border border-border flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="opacity-60"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.79 1.53V6.78a4.85 4.85 0 0 1-1.02-.09z"></path></svg>
+                            </div>
+                            <div class="relative z-10 w-12 h-12 rounded-full border-2 flex items-center justify-center group-hover:scale-110 transition-all duration-300 border-primary text-primary group-hover:bg-primary group-hover:text-primary-foreground">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
+                            </div>
+                            <div class="absolute bottom-3 right-3 px-2 py-1 rounded bg-background/80 text-xs font-black text-foreground">1:45</div>
+                            <div class="absolute top-3 left-3 flex items-center gap-1 px-2 py-1 rounded-full bg-foreground/10 border border-border text-xs font-black text-foreground">TikTok</div>
                         </div>
-                        <h4 class="text-sm font-bold text-foreground leading-tight mb-2">Dead USB-C Port Rework</h4>
-                        <span class="text-xs font-black uppercase tracking-wide text-primary">Watch</span>
+                        <div class="p-4">
+                            <h4 class="text-sm font-bold text-foreground leading-tight mb-2">Dead USB-C Port on Xbox Controller — SMD Rework</h4>
+                            <div class="flex items-center gap-3 text-xs text-muted-foreground">
+                                <span class="flex items-center gap-1"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>22.1K views</span>
+                                <span class="text-xs font-black uppercase tracking-wide text-primary">Watch ➔</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CONTACT SECTION -->
-        <section id="contact" class="py-16 md:py-24 relative bg-muted/10 scroll-mt-20">
+        <section id="contact" class="py-16 md:py-24 relative scroll-mt-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
                     <div>
-                        <span class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.4em] text-primary mb-4">Contact</span>
-                        <h2 class="text-4xl font-black text-foreground mb-4">Start Your <span class="text-primary neon-text-primary">Repair.</span></h2>
-                        <p class="text-muted-foreground mb-8">Fill out the form and we'll respond within 2 hours via Messenger or WhatsApp.</p>
-                        <div class="space-y-4">
-                            <div>
-                                <p class="text-xs font-black uppercase tracking-widest text-muted-foreground">Location</p>
-                                <p class="text-sm font-semibold text-foreground mt-0.5">Dagupan City, Pangasinan, Philippines</p>
+                        <span class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.4em] text-primary mb-4">
+                            <span class="h-px w-12 bg-primary opacity-60"></span>Contact
+                        </span>
+                        <h2 class="text-section-title text-foreground mb-4">Start Your <span class="text-primary neon-text-primary">Repair.</span></h2>
+                        <p class="text-base text-muted-foreground leading-relaxed mb-8">Fill out the form and we'll respond within 2 hours via Messenger or WhatsApp. Nationwide and local clients welcome.</p>
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start gap-3">
+                                <div class="w-9 h-9 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary shrink-0 mt-0.5">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-black uppercase tracking-widest text-muted-foreground">Location</p>
+                                    <p class="text-sm font-semibold text-foreground mt-0.5">Dagupan City, Pangasinan, Philippines</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-cyber p-6 md:p-8 border border-border rounded-xl bg-background">
+                    <div class="card-cyber p-6 md:p-8">
                         <h3 class="text-xl font-black text-foreground mb-6">Repair Inquiry</h3>
                         <form class="space-y-5">
                             <div>
                                 <label class="block text-xs font-black uppercase tracking-widest text-muted-foreground mb-2">Full Name *</label>
-                                <input type="text" placeholder="e.g. Juan dela Cruz" class="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground text-sm">
+                                <input type="text" placeholder="e.g. Juan dela Cruz" class="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground placeholder:text-muted-foreground text-sm font-medium focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
                             </div>
                             <div>
                                 <label class="block text-xs font-black uppercase tracking-widest text-muted-foreground mb-2">Device Model *</label>
-                                <input type="text" placeholder="e.g. PS5 DualSense" class="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground text-sm">
+                                <input type="text" placeholder="e.g. PS5 DualSense" class="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground placeholder:text-muted-foreground text-sm font-medium focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
                             </div>
-                            <button type="button" class="w-full py-4 rounded-full bg-primary text-primary-foreground font-black text-sm tracking-wide neon-glow-primary hover:opacity-90">Submit Repair Request</button>
+                            <button type="button" class="w-full py-4 rounded-full bg-primary text-primary-foreground font-black text-sm tracking-wide neon-glow-primary hover:opacity-90 transition-all duration-200">Submit Repair Request</button>
                         </form>
                     </div>
                 </div>
