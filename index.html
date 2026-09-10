@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuit Senshi | Tech, Hardware & Reviews</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #050505;
+            --surface-color: #121212;
+            --neon-cyan: #0ff;
+            --neon-purple: #b026ff;
+            --text-main: #e0e0e0;
+            --text-muted: #888;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Rajdhani', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .brand {
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(5, 5, 5, 0.9);
+            border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .brand {
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--text-main);
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px var(--neon-purple);
+        }
+
+        .brand span {
+            color: var(--neon-cyan);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at center, #1a0b2e 0%, var(--bg-color) 70%);
+            padding: 0 20px;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            color: #fff;
+            text-shadow: 0 0 20px var(--neon-cyan), 0 0 40px var(--neon-cyan);
+            letter-spacing: 4px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: var(--neon-purple);
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            font-family: 'Orbitron', sans-serif;
+            color: var(--bg-color);
+            background: var(--neon-cyan);
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: 0.3s;
+            box-shadow: 0 0 15px var(--neon-cyan);
+        }
+
+        .btn:hover {
+            background: var(--neon-purple);
+            box-shadow: 0 0 25px var(--neon-purple);
+            color: #fff;
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 80px 10%;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: var(--neon-cyan);
+            border-bottom: 2px solid var(--neon-purple);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--surface-color);
+            border: 1px solid rgba(176, 38, 255, 0.3);
+            padding: 30px;
+            border-radius: 8px;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            border-color: var(--neon-cyan);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .card p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        /* About Section */
+        .about-text {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+
+        /* Contact Section */
+        .contact-box {
+            background: var(--surface-color);
+            border-left: 4px solid var(--neon-cyan);
+            padding: 40px;
+            font-size: 1.2rem;
+        }
+
+        .contact-box p {
+            margin-bottom: 15px;
+        }
+        
+        .contact-box a {
+            color: var(--neon-purple);
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .contact-box a:hover {
+            color: var(--neon-cyan);
+            text-shadow: 0 0 8px var(--neon-cyan);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 50px;
+            font-family: 'Orbitron', sans-serif;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="brand">Circuit<span>Senshi</span></div>
+    </nav>
+
+    <section class="hero">
+        <h1>Circuit Senshi</h1>
+        <p>Hardware Builds. Tech Reviews. Student Vlogs.</p>
+        <a href="#about" class="btn">Initialize System</a>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="section-title">Sys.Info // Founder</h2>
+        <p class="about-text">
+            System initialized by <strong>Gian Castillo</strong>. As an Electronics Engineering student at the University of Luzon, Circuit Senshi bridges the gap between academic theory and practical, hands-on hardware modification.
+        </p>
+        <p class="about-text">
+            This platform documents the journey through custom builds, component analysis, and the daily grind of an engineering student navigating the modern tech landscape.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Hardware Lab // Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>FPV Drone Engineering</h3>
+                <p>Designing, assembling, and tuning 5-inch freestyle FPV drones. Specializing in high-performance stacks and digital HD video transmission setups.</p>
+            </div>
+            <div class="card">
+                <h3>Microsoldering & SMD</h3>
+                <p>Precision board-level work utilizing advanced hot air rework stations. From intricate SMD circuit kits to custom LED arrays and hardware repair.</p>
+            </div>
+            <div class="card">
+                <h3>Custom Architecture</h3>
+                <p>High-end custom PC building and testing. Analyzing the latest silicon, benchmarking system stability, and optimizing desktop workstations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2 class="section-title">Comm.Link // Contact</h2>
+        <div class="contact-box">
+            <p><strong>Transmission Line:</strong> 09763870717</p>
+            <p><strong>Encrypted Mail:</strong> <a href="mailto:giancastillo116@gmail.com">giancastillo116@gmail.com</a></p>
+            <p><strong>Video Archive:</strong> <a href="https://www.youtube.com/@giancastillo5302" target="_blank">YouTube Channel</a></p>
+            <br>
+            <p style="color: var(--text-muted); font-size: 1rem;">// TikTok channel [Circuit Senshi] loading soon...</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 CIRCUIT SENSHI. ALL RIGHTS RESERVED.
+    </footer>
+
+</body>
+</html>
